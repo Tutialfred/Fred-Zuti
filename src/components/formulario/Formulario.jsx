@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
-import "./formulario.css"
 import Swal from "sweetalert2";
 import "./formulaaario.css"
 // import axios from "axios";
@@ -8,8 +7,8 @@ import "./formulaaario.css"
 // import NavBar from "../NavBar/NavBar";
 
 export default function Contact() {
-  const history = useHistory();
-
+  // const history = useHistory();
+  
   const [input, setInput] = useState({
     email: "",
     nombre: "", // Pensarlo bien si realmente va a estar a estar este input
@@ -111,7 +110,7 @@ export default function Contact() {
         confirmButtonColor: "Green",
         timer: 5000,
       });
-      history.push("/");
+      // history.push("/");
     }
   }
 
