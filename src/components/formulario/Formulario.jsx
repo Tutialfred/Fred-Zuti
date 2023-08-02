@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { Link, useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import "./formulario.css"
 import Swal from "sweetalert2";
 import "./formulaaario.css"
@@ -8,7 +8,7 @@ import "./formulaaario.css"
 // import NavBar from "../NavBar/NavBar";
 
 export default function Contact() {
-  // const history = useHistory();
+  const history = useHistory();
 
   const [input, setInput] = useState({
     email: "",
@@ -111,7 +111,7 @@ export default function Contact() {
         confirmButtonColor: "Green",
         timer: 5000,
       });
-      // history.push("/home");
+      history.push("/");
     }
   }
 
